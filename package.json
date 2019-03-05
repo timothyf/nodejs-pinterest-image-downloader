@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "jest --watch --verbose ./lib ./app"
+    "start": "node index.js",
+    "test": "jest --watch --verbose index-factory.test.js",
+    "test-lib": "jest --watch --verbose lib"
   },
   "keywords": [
     "nodejs",
