@@ -1,0 +1,19 @@
+{
+  "name": "downloader",
+  "version": "1.0.0",
+  "description": "node-fetch download wrapper",
+  "main": "downloader.js",
+  "scripts": {
+    "test": "jest downloader.test.js"
+  },
+  "keywords": [
+    "downloader"
+  ],
+  "author": "Martijn Hanrath",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.1.0",
+    "node-fetch": "^2.3.0",
+    "valid-url": "^1.0.9"
+  }
+}
