@@ -1,0 +1,19 @@
+{
+  "name": "fs-writer",
+  "version": "1.0.0",
+  "description": "save content to filesystem",
+  "main": "fs-writer.js",
+  "scripts": {
+    "test": "jest --verbose fs-writer.test.js"
+  },
+  "keywords": [
+    "save",
+    "store",
+    "write"
+  ],
+  "author": "Martijn Hanrath",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.1.0"
+  }
+}

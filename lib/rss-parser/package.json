@@ -4,7 +4,7 @@
   "description": "",
   "main": "rss-parser.js",
   "scripts": {
-    "test": "jest --watch parser.test.js"
+    "test": "jest --verbose parser.test.js"
   },
   "keywords": [
     "rss-parser",

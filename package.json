@@ -17,6 +17,7 @@
     "dotenv": "^6.2.0",
     "jest": "^24.1.0",
     "downloader": "file:lib/downloader",
+    "fs-writer": "file:lib/fs-writer",
     "rss-parser": "file:lib/rss-parser"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@
   "description": "node-fetch download wrapper",
   "main": "downloader.js",
   "scripts": {
-    "test": "jest downloader.test.js"
+    "test": "jest --verbose downloader.test.js"
   },
   "keywords": [
     "downloader"
