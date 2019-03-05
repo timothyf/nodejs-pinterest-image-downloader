@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --watch --verbose index-factory.test.js",
+    "test": "jest --watch --verbose ./app/*.test.js",
     "test-lib": "jest --watch --verbose lib"
   },
   "keywords": [

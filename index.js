@@ -10,9 +10,9 @@ const appConfig = env.parsed;
 
 async function start(config) {
   const { URL, OUTPUT_DIR } = config;
-  const pinterestRssFeedImageDownloader = require('./index-factory')(URL, OUTPUT_DIR);
+  const pinterestImageDownloader = require('./app/pinterest-image-downloader-factory')(URL, OUTPUT_DIR);
 
-  await pinterestRssFeedImageDownloader
+  await pinterestImageDownloader
     .then(console.info)
     .catch(err => {
       console.error(err);

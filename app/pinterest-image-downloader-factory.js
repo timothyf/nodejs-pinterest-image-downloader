@@ -6,15 +6,9 @@ const getRssItems = (xml) => xml.channel[0].item;
 const getRssItemLinks = (text) => text.match('https://.*.jpg')[0].split('"')[0];
 
 module.exports = async (rssUrl, outputDir) => {
-  const fetch = require('node-fetch');
-  const urlValidator = require('valid-url');
-  const downloader = require('downloader')(fetch, urlValidator);
-
-  const xml2js = require('xml2js').parseString;
-  const rssParser = require('rss-parser')(xml2js);
-
-  const fs = require('fs');
-  const fsWriter = require('fs-writer')(fs);
+  const downloader = require('./downloader-factory')();
+  const rssParser = require('./rss-parser-factory')();
+  const fsWriter = require('./fs-writer-factory')();
 
   const downloadedXmlDocument = await downloader.fetchContent(rssUrl).then((res) => res.text());
   const parsedRssDocument = await rssParser.parseRss(downloadedXmlDocument);
