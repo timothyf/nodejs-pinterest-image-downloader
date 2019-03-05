@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jest --watch ./lib ./app"
+    "test": "jest --watch --verbose ./lib ./app"
   },
   "keywords": [
     "nodejs",
@@ -15,8 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.2.0",
+    "jest": "^24.1.0",
     "downloader": "file:lib/downloader",
-    "jest": "^24.1.0"
+    "rss-parser": "file:lib/rss-parser"
   },
   "devDependencies": {
     "eslint": "^5.15.1",

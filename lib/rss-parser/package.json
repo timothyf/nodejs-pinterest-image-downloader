@@ -1,0 +1,19 @@
+{
+  "name": "rss-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rss-parser.js",
+  "scripts": {
+    "test": "jest --watch parser.test.js"
+  },
+  "keywords": [
+    "rss-parser",
+    "xml"
+  ],
+  "author": "Martijn Hanrath",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.1.0",
+    "xml2js": "^0.4.19"
+  }
+}
